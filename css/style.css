@@ -1,0 +1,56 @@
+body{
+    background-image: url(/img/i.webp);
+}
+.container{
+    width: 90%;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 50px;
+    /* background-image: linear-gradient(90deg, rgba(0, 255, 255, 0.5), rgba(255, 255, 0, 0.52), rgba(234, 0, 255, 0.52)); */
+}
+h1{
+    font-size: 50px;
+    font-family: monospace, sans-serif;
+    text-align: center;
+}
+.game {
+    width: 90%;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(/img/dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+#cactus {
+    width: 20px;
+    height: 40px;
+    background-image: url(/img/cactus.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 95%;
+    animation: cactusMov 1.5s infinite linear;
+}
+@keyframes cactusMov {
+    0%{left: 95%;}
+    100%{left: -20px;}
+}
+.jump {
+    animation: jump 0.3s linear;  
+}@keyframes jump {
+    0% {top: 150px;}
+    20% {top: 130px;}
+    35% {top: 100px;}
+    50% {top: 80px;}
+    70% {top: 100px;}
+    85% {top: 135px;}
+    100% {top: 150px;}
+}
